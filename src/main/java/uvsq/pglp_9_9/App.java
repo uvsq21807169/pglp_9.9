@@ -6,8 +6,11 @@ package uvsq.pglp_9_9;
  */
 public class App 
 {
+	static DrawingApp da;
+	
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+
+        da = new DrawingApp();
     }
 }
