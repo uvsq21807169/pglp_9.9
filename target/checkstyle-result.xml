@@ -108,8 +108,6 @@
 <error line="16" column="30" severity="warning" message="&apos;(&apos; is followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck"/>
 <error line="22" column="9" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
 </file>
-<file name="/home/user/pglp_9_9/src/main/java/Commandes/Commande.java">
-</file>
 <file name="/home/user/pglp_9_9/src/main/java/Commandes/DeplacerForme.java">
 <error line="5" severity="warning" message="Extra separation in import group before &apos;DAO.CarreDAO&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
 <error line="5" severity="warning" message="Wrong lexicographical order for &apos;DAO.CarreDAO&apos; import. Should be before &apos;java.awt.Composite&apos;." source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
