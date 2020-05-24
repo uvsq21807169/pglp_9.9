@@ -23,9 +23,9 @@ public class TriangleDAO extends DAO<Triangle>{
 			prepare.setString(1, obj.name);
 			prepare.setDouble(2, obj.centre_x);
 			prepare.setDouble(3, obj.centre_y);
-			prepare.setDouble(4, obj.angle_1);
-			prepare.setDouble(5, obj.angle_2);
-			prepare.setDouble(6, obj.angle_3);
+			prepare.setDouble(4, obj.cote_1);
+			prepare.setDouble(5, obj.cote_2);
+			prepare.setDouble(6, obj.cote_3);
 			boolean result = prepare.execute();
 			
 			new FormeDAO().create(obj);
@@ -63,9 +63,9 @@ public class TriangleDAO extends DAO<Triangle>{
 	      update = connect.prepareStatement("update triangle set angle_1 = (?), angle_2 = (?),angle_3 = (?),"
 	      		+ " centre_x = (?), centre_y = (?) where name = (?) ");
 
-	      update.setDouble(1, obj.angle_1);
-	      update.setDouble(2, obj.angle_2);
-	      update.setDouble(3, obj.angle_3);
+	      update.setDouble(1, obj.cote_1);
+	      update.setDouble(2, obj.cote_2);
+	      update.setDouble(3, obj.cote_3);
 	      update.setDouble(4, obj.centre_x);
 	      update.setDouble(5, obj.centre_y);
 	      update.setString(6, obj.name);

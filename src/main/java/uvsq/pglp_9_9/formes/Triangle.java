@@ -3,18 +3,18 @@ package uvsq.pglp_9_9.formes;
 public class Triangle extends Forme{
 
 	
-	public double angle_1;
-	public double angle_2;
-	public double angle_3;
+	public double cote_1;
+	public double cote_2;
+	public double cote_3;
 
 	
-	public Triangle(String name, double angle_1, double angle_2, double angle_3, double centre_x, double centre_y ) {
+	public Triangle(String name, double cote_1, double cote_2, double cote_3, double centre_x, double centre_y ) {
 		
 		super(name, "triangle", centre_x, centre_y);
 		
-		this.angle_1 = angle_1;
-		this.angle_2 = angle_2;
-		this.angle_3 = angle_3;
+		this.cote_1 = cote_1;
+		this.cote_2 = cote_2;
+		this.cote_3 = cote_3;
 	}
 	
 	public String print(int niveau) {
@@ -24,9 +24,9 @@ public class Triangle extends Forme{
 		String str = tabulation+"-------------------\n"+
 				tabulation+"nom : "+name+
 			      "\n"+tabulation+"position : ("+centre_x+" , "+centre_y+" )\n"+
-			      tabulation+"angle 1 : "+angle_1+"\n"+
-			      tabulation+"angle 2 : "+angle_2+"\n"+
-			      tabulation+"angle 3 : "+angle_3+"\n"+
+			      tabulation+"cote 1 : "+cote_1+"\n"+
+			      tabulation+"cote 2 : "+cote_2+"\n"+
+			      tabulation+"cote 3 : "+cote_3+"\n"+
 			      "\n"+tabulation+"------------------\n";
 		return str;
 	}
