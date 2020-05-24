@@ -1,11 +1,11 @@
 ----------------------------------------------------------------
-Sat May 23 01:47:01 CEST 2020:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.13.1.1 - (1765088): instance a816c00e-0172-3ec8-6a5e-000001687990 
-on database directory /home/user/eclipse-java-oxygen-workspace/pglp_9_9/jdbcDB with class loader sun.misc.Launcher$AppClassLoader@73d16e93 
+Sun May 24 19:42:23 CEST 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.13.1.1 - (1765088): instance a816c00e-0172-47c7-4a40-0000016b77c0 
+on database directory /home/user/pglp_9_9/jdbcDB with class loader sun.misc.Launcher$AppClassLoader@73d16e93 
 Loaded from file:/home/user/.m2/repository/org/apache/derby/derby/10.13.1.1/derby-10.13.1.1.jar
 java.vendor=Oracle Corporation
 java.runtime.version=1.8.0_144-b01
-user.dir=/home/user/eclipse-java-oxygen-workspace/pglp_9_9
+user.dir=/home/user/pglp_9_9
 os.name=Linux
 os.arch=amd64
 os.version=4.12.0-1-amd64

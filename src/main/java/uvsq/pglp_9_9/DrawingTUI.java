@@ -22,17 +22,26 @@ public class DrawingTUI {
 
 	public DrawingTUI() {
 		sc = new Scanner(System.in);
+		System.out.println("Les commandes a saisir sont :");
+		System.out.println("-> NOM = TYPE((x, y), PARAMETRES[])");
+		System.out.println("-> NOM3 = NOM1 + NOM2 + ... ");
+		System.out.println("-> move(NOM, (x, y))");
+		System.out.println("-> show NOM");
+		System.out.println("-> quit");
+
 	}
 	
-	public void nextCommand() {
+	public boolean nextCommand() {
 		String line ="";
-		if(sc.hasNextLine())
+		if(sc.hasNextLine()) {
 		    line = sc.nextLine();
+		    if(line.equals("quit"))
+		    	return false;
+		}
 		
 		if(line.contains("=")) {
 			if(line.contains("(")) {
-				createForme(line);
-				
+				createForme(line);	
 			}
 			else {
 				createComposite(line);
@@ -44,12 +53,13 @@ public class DrawingTUI {
 		else if(line.contains("show")){
 			showForme(line);
 		}
+		else
+			System.out.println("Commande non identifié !");
+		
+		return true;
 		
 	}
-	
-	private void affiche() {
-		
-	}
+
 	
 	public void createForme(String line) {
 		//c1 = Cercle((0, 0), 50)

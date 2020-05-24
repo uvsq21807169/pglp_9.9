@@ -17,9 +17,10 @@ public class DrawingApp {
 	}
 	
 	public void run() {
-		while(true) {
-			drawing.nextCommand();	
+		while(drawing.nextCommand()	) {
+			
 		}
+		System.out.println("Programme terminé !");
 		
 	}
 	
