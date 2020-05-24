@@ -1,0 +1,5 @@
+#Sun May 24 20:12:00 CEST 2020
+module-resource*?\:checkstyle-suppressions.xml=B9F5175F799374E5ACFC4DB9D90C91FFEEF4E0A9
+module-resource*?\:checkstyle-xpath-suppressions.xml=453DCAB6BEF53727A43969F52BDCF753ABA13E0F
+/home/user/pglp_9_9/src/main/java/Commandes/Commande.java=1589756449000
+configuration*?=32EF8AD166C42EDF48FA21388FC31ACCD5C78FE3

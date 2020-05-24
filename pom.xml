@@ -13,6 +13,45 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
+  <build>
+    <plugins>
+    
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-checkstyle-plugin</artifactId>
+        <version>3.1.1</version>
+      </plugin> 
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-site-plugin</artifactId>
+        <version>3.7.1</version>
+      </plugin>
+      
+      <plugin>
+	    <groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-project-info-reports-plugin</artifactId>
+		<version>3.0.0</version>
+	  </plugin>
+      
+      <plugin>
+				<groupId>com.github.spotbugs</groupId>
+				<artifactId>spotbugs-maven-plugin</artifactId>
+				<version>3.1.11</version>
+				<dependencies>
+					<!-- overwrite dependency on spotbugs if you want to specify the version 
+						of spotbugs -->
+					<dependency>
+						<groupId>com.github.spotbugs</groupId>
+						<artifactId>spotbugs</artifactId>
+						<version>3.1.12</version>
+					</dependency>
+				</dependencies>
+			</plugin>
+      
+    </plugins>
+  </build>
+  
 
   <dependencies>
     <dependency>
@@ -28,6 +67,36 @@
 			<version>10.13.1.1</version>
 		</dependency>
   </dependencies>
+  
+  <reporting>
+      <plugins>
+      
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-checkstyle-plugin</artifactId>
+          <version>3.1.1</version>
+          <configuration>
+            <configLocation>checkstyle.xml</configLocation>
+          </configuration>
+          <reportSets>
+            <reportSet>
+              <reports>
+                <report>checkstyle</report>
+              </reports>
+            </reportSet>
+          </reportSets>
+        </plugin>
+        
+        
+        <plugin>
+		  <groupId>com.github.spotbugs</groupId>
+	   	  <artifactId>spotbugs-maven-plugin</artifactId>
+		  <version>3.1.8</version>
+		</plugin> 
+        
+       
+      </plugins>
+    </reporting>
   
   
 </project>
